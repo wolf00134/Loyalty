@@ -54,19 +54,18 @@ const useStyles = createUseStyles({
 
 function Loyalty() {
   const [isExpanded, setIsExpanded] = useState(false);
-  const [isSDKExpanded, setIsSDKExpanded] = useState(false);
   const [isOperationExpanded, setIsOperationExpanded] = useState(false);
   const classes = useStyles();
+  const dispatch = useDispatch();
+  const onClickSettings = () => {
+    dispatch(customerActions.getAllCustomers());
+  }
   const expandCollapse = () => {
     setIsExpanded(!isExpanded);
-  }
-  const expandSDKMenu = () => {
-    setIsSDKExpanded(!isSDKExpanded);
   }
   const expandOperationMenu = () => {
     setIsOperationExpanded(!isOperationExpanded);
   }
-  const dispatch = useDispatch();
 
   return (
     <div style={{display: 'flex', minHeight: '100vh'}}>
@@ -241,7 +240,7 @@ function Loyalty() {
         </div>
         <div className={classes.leftMenu}>
           <CiSettings className={classes.icon}/>
-          <Button appearance='subtle' style={{margin: 8}}>Cài đặt</Button>
+          <Button appearance='subtle' style={{margin: 8}} onClick={onClickSettings}>Cài đặt</Button>
         </div>
       </div>
       <div className={classes.contentWrapper}>

@@ -4,6 +4,7 @@ import { RIGHT_PAGE_CONTENT } from '../../utils/constant';
 const initialState = {
   rightPageContent: RIGHT_PAGE_CONTENT.CUSTOMER,
   selectedCustomer: {},
+  customers: [],
 };
 
 const customerSlice = createSlice({
@@ -15,7 +16,11 @@ const customerSlice = createSlice({
     },
     setSelectedCustomer: (state, action) => {
       state.selectedCustomer = action.payload.selectedCustomer;
-    }
+    },
+    getAllCustomers: () => { },
+    getAllCustomersSuccess: (state, action) => {
+      state.customers = action.payload.customers;
+    },
   }
 });
 
