@@ -34,19 +34,19 @@ function TotalCustomers({ title, amount, percentage }) {
   const shops = [
     {
       src: 'fptShop.png',
-      name: 'FPT Shop',
+      name: 'Shop A',
       amount: '580K',
       percentage: '5%',
     },
     {
       src: 'fptTelecom.png',
-      name: 'FPT Telecom',
+      name: 'Shop B',
       amount: '580K',
       percentage: '5%',
     },
     {
       src: 'sendo.png',
-      name: 'Sendo Farm',
+      name: 'Shop C',
       amount: '580K',
       percentage: '5%',
     },

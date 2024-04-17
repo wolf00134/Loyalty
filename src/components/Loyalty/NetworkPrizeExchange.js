@@ -47,7 +47,7 @@ function NetworkPrizeExchange() {
       title: 'Nhà cung cấp',
     },
     {
-      title: 'Giá trị FGold',
+      title: 'Giá trị reward points',
     },
     {
       title: 'Trạng thái',
@@ -61,8 +61,8 @@ function NetworkPrizeExchange() {
     {
       id: '3453094853',
       name: 'Ngô Thị Hường',
-      giftNane: 'Phiếu đi chợ Sendo Farm trị giá 30.000Đ',
-      provider: 'Sendo Farm',
+      giftNane: 'Phiếu đi chợ Shop C trị giá 30.000Đ',
+      provider: 'Shop C',
       fGoldValue: 300,
       status: <Lozenge appearance='success'><h3>Đã đổi</h3></Lozenge>,
       time: '23/2/2024',

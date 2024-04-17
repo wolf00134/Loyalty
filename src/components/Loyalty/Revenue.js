@@ -29,17 +29,17 @@ function Revenue() {
   const classes = useStyles();
   const revenues = [
     {
-      title: 'Doanh thu từ FGold tích',
+      title: 'Doanh thu từ reward points tích',
       amount: '12.3B',
       percentage: '3%',
     },
     {
-      title: 'Doanh thu từ FGold tiêu',
+      title: 'Doanh thu từ reward points tiêu',
       amount: '2.3B',
       percentage: '3%',
     },
     {
-      title: 'Doanh thu từ FGold tiêu chéo',
+      title: 'Doanh thu từ reward points tiêu chéo',
       amount: '24.6M',
       percentage: '3%',
     },
@@ -63,10 +63,10 @@ function Revenue() {
       />
       <div className={classes.graphGrid}>
         <div className={classes.graph}>
-          <h4>Doanh thu trên từng FGold tích</h4>
+          <h4>Doanh thu trên từng reward points tích</h4>
         </div>
         <div className={classes.graph}>
-          <h4>Doanh thu trên từng FGold tiêu</h4>
+          <h4>Doanh thu trên từng reward points tiêu</h4>
         </div>
       </div>
     </>

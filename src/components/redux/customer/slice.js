@@ -11,6 +11,7 @@ const customerSlice = createSlice({
   name: 'customer',
   initialState,
   reducers: {
+    prepareData: () => { },
     changeRightPageContent: (state, action) => {
       state.rightPageContent = action.payload;
     },
@@ -21,6 +22,7 @@ const customerSlice = createSlice({
     getAllCustomersSuccess: (state, action) => {
       state.customers = action.payload.customers;
     },
+    getAllCustomersFail: () => { },
   }
 });
 

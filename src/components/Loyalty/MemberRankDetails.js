@@ -47,7 +47,7 @@ function MemberRankDetails() {
   const shops = [
     {
       key: 1,
-      name: 'FPT Shop',
+      name: 'Shop A',
       amount: 580,
       src: 'fptShop.png',
     },
@@ -59,7 +59,7 @@ function MemberRankDetails() {
     },
     {
       key: 3,
-      name: 'Sendo Farm',
+      name: 'Shop C',
       amount: 114,
       src: "sendo.png",
     },

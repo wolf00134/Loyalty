@@ -35,7 +35,7 @@ function TransactionHistory() {
       title: 'Nguồn tích',
     },
     {
-      title: 'FGold đã hết hạn',
+      title: 'Reward points đã hết hạn',
     },
     {
       title: 'Hết hiệu lực',
@@ -49,8 +49,8 @@ function TransactionHistory() {
       id: '3453094853',
       name: 'Ngô Thị Hường',
       phone: '2387598792',
-      source: 'Sendo Farm',
-      FGold: 300,
+      source: 'Shop C',
+      rewardPoints: 300,
       expiredDate: '16/12/2023',
       minus: '16/12/2023',
     }
@@ -72,7 +72,7 @@ function TransactionHistory() {
                 <Cell>{item.name}</Cell>
                 <Cell>{item.phone}</Cell>
                 <Cell>{item.source}</Cell>
-                <Cell>{item.FGold}</Cell>
+                <Cell>{item.rewardPoints}</Cell>
                 <Cell>{item.expiredDate}</Cell>
                 <Cell>{item.minus}</Cell>
               </Row>

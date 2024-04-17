@@ -28,7 +28,7 @@ function CustomerInfo() {
       </div>
       <div className={classes.customerStats}>
         <div>
-          <h5>FPT Telecom</h5>
+          <h5>Shop B</h5>
           <h5>CCTV</h5>
         </div>
         <div>
@@ -37,11 +37,11 @@ function CustomerInfo() {
         </div>
         <div>
           <h5>2,920</h5>
-          <h5>Tổng FGold</h5>
+          <h5>Tổng Reward points</h5>
         </div>
         <div>
           <h5>12,202</h5>
-          <h5>FGold hết hạn</h5>
+          <h5>Reward points hết hạn</h5>
         </div>
       </div>
     </div>

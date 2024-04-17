@@ -28,17 +28,17 @@ function Points() {
   const classes = useStyles();
   const fGold = [
     {
-      title:'Tổng FGold tích',
+      title:'Tổng reward points tích',
       amount: '1.2B',
       rate: '10%',
     },
     {
-      title:'Tổng FGold tiêu',
+      title:'Tổng reward points tiêu',
       amount: '6.8M',
       rate: '3%',
     },
     {
-      title:'Tổng FGold tiêu chéo',
+      title:'Tổng reward points tiêu chéo',
       amount: '24.6M',
       rate: '14%',
     },

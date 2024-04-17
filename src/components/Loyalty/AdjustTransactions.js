@@ -45,13 +45,13 @@ function AdjustTransactions() {
       title: 'CCTV',
     },
     {
-      title: 'FGold tích',
+      title: 'Reward points tích',
     },
     {
-      title: 'FGold tiêu',
+      title: 'Reward points tiêu',
     },
     {
-      title: 'FGold điều chỉnh',
+      title: 'Reward points điều chỉnh',
     },
     {
       title: 'Thời gian',
@@ -62,7 +62,7 @@ function AdjustTransactions() {
       id: '3453094853',
       transactionCode: 'cErge34VBBE3dfg45dfgg4hvv',
       transactionType: '2387598792',
-      cctv: 'Sendo Farm',
+      cctv: 'Shop C',
       fGoldSaved: 300,
       fGoldSpent: 100,
       fGoldAdjusted: 25,

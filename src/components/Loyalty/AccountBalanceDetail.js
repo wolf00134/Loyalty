@@ -48,7 +48,7 @@ function AccountBalanceDetail() {
   const shops = [
     {
       key: 1,
-      name: 'FPT Shop',
+      name: 'Shop A',
       amount: 580,
       src: 'fptShop.png',
     },
@@ -60,7 +60,7 @@ function AccountBalanceDetail() {
     },
     {
       key: 3,
-      name: 'Sendo Farm',
+      name: 'Shop C',
       amount: 114,
       src: "sendo.png",
     },
@@ -94,7 +94,7 @@ function AccountBalanceDetail() {
             </div>
             <div>
               <h5>Số điện thoại</h5>
-              <h4>{selectedCustomer.phone}</h4>
+              <h4>{selectedCustomer.phone_number}</h4>
             </div>
             <div>
               <h5>Địa chỉ ví</h5>
@@ -109,7 +109,7 @@ function AccountBalanceDetail() {
       </div>
       <div className={classes.fGoldContent}>
         <div className={classes.customerDetailWrapper}>
-          <h4>Tổng FGold tích</h4>
+          <h4>Tổng reward points tích</h4>
           <h3>{selectedCustomer.fGoldSaved}</h3>
           <hr />
           <div className={classes.gridWrapper}>
@@ -125,7 +125,7 @@ function AccountBalanceDetail() {
           </div>
         </div>
         <div className={classes.customerDetailWrapper}>
-          <h4>Tổng FGold tiêu</h4>
+          <h4>Tổng reward points tiêu</h4>
           <h3>{selectedCustomer.fGoldSpent}</h3>
           <hr />
           <div className={classes.gridWrapper}>

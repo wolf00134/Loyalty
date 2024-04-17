@@ -24,49 +24,49 @@ function Summary() {
       percentage: '3%',
     },
     {
-      title: 'Tổng FGold tích',
+      title: 'Tổng reward points tích',
       amount: '1.2B',
       percentage: '3%',
     },
     {
-      title: 'Tổng FGold tiêu',
+      title: 'Tổng reward points tiêu',
       amount: '236M',
       percentage: '1%',
     },
     {
-      title: 'Tổng FGold hết hạn',
+      title: 'Tổng reward points hết hạn',
       amount: '472M',
       percentage: '3%',
     },
   ];
   const summaryPieCharts = [
     {
-      title: 'Tổng khách hàng tích tại FPT Shop',
+      title: 'Tổng khách hàng tích tại Shop A',
       amount: '300K',
       percentage: '10%',
     },
     {
-      title: 'Tổng khách hàng tích tại FPT Telecom',
+      title: 'Tổng khách hàng tích tại Shop B',
       amount: '3.08M',
       percentage: '10%',
     },
     {
-      title: 'Tổng khách hàng tích tại Sendo Farm',
+      title: 'Tổng khách hàng tích tại Shop C',
       amount: '372K',
       percentage: '10%',
     },
     {
-      title: 'Tổng FGold tích tại FPT Shop',
+      title: 'Tổng reward points tích tại Shop A',
       amount: '446M',
       percentage: '10%',
     },
     {
-      title: 'Tổng FGold tích tại FPT Telecom',
+      title: 'Tổng reward points tích tại Shop B',
       amount: '762M',
       percentage: '10%',
     },
     {
-      title: 'Tổng FGold tích tại Sendo Farm',
+      title: 'Tổng reward points tích tại Shop C',
       amount: '300K',
       percentage: '10%',
     },

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Avatar from '@atlaskit/avatar';
 import Button from '@atlaskit/button';
 import { GoGift } from "react-icons/go";
@@ -57,6 +57,11 @@ function Loyalty() {
   const [isOperationExpanded, setIsOperationExpanded] = useState(false);
   const classes = useStyles();
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(customerActions.prepareData());
+  }, []);
+
   const onClickSettings = () => {
     dispatch(customerActions.getAllCustomers());
   }

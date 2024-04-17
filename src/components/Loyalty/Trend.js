@@ -28,10 +28,10 @@ function Trend() {
       title: 'Member theo CCTV',
     },
     {
-      title: 'Xu hướng tích FGold',
+      title: 'Xu hướng tích reward points',
     },
     {
-      title: 'Xu hướng tiêu FGold',
+      title: 'Xu hướng tiêu reward points',
     },
   ];
 
