@@ -3,6 +3,7 @@ import { Provider } from 'react-redux';
 import SignIn from './components/SignIn';
 import Loyalty from './components/Loyalty';
 import store from './components/store/main';
+import './components/utils/dayJsPlugins';
 import { JssProvider, SheetsRegistry, createGenerateId } from 'react-jss';
 
 function App() {

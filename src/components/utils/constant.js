@@ -16,4 +16,13 @@ export const RIGHT_PAGE_CONTENT = {
   MEMBER_RANK_DETAILS: { name: 'member-rank-details' },
   ACCOUNT_BALANCE: { name: 'account-balance' },
   ACCCOUNT_BALANCE_DETAILS: { name: 'acccount-balance-details' },
-}
+};
+
+export const COMPANIES = {
+  COMPANY_A : { key: 'a', name: 'Company A'},
+  COMPANY_B : { key: 'b', name: 'Company B'},
+  COMPANY_C : { key: 'c', name: 'Company C'},
+  COMPANY_D : { key: 'd', name: 'Company D'},
+};
+
+export const DEFAULT_FORMAT_DATE = 'YYYY-MM-DD';

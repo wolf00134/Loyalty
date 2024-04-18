@@ -26,6 +26,7 @@ In the project directory, to run the front-end of the app:
 The UI of the website will appear in your web browser.
 The page will reload when you make changes.
 You may also see any lint errors in the console.
+The back-end uses port 3000 to connect to the database. When starting the front-end, it may ask you to use another port for front-end. Make sure to type "yes" or "y" in order to allow the front-end to change its port.
 
 To run the back-end of the app:
 

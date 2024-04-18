@@ -1,6 +1,11 @@
-import { N10 } from "@atlaskit/theme/colors";
+import { B300, B400, G100, G200, N10, R100, R200, Y200, Y400 } from "@atlaskit/theme/colors";
 import React from "react";
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import { Doughnut } from "react-chartjs-2";
 import { createUseStyles } from "react-jss";
+import { COMPANIES } from "../../utils/constant";
+
+ChartJS.register(ArcElement, Tooltip, Legend);
 
 const useStyles = createUseStyles({
   chartWrapper: {
@@ -18,12 +23,79 @@ const useStyles = createUseStyles({
 
 function CustomerPieChart({title, amount, percentage}) {
   const classes = useStyles();
+  const getValues = (obj, field) => Object.values(obj).map((c) => c[field]);
+
+  const companyList = {
+    companyA: {
+      label: COMPANIES.COMPANY_A.name,
+      value: '1600',
+      backgroundColor: B300,
+      borderColor: B400,
+    },
+    companyB: {
+      label: COMPANIES.COMPANY_B.name,
+      value: '18100',
+      backgroundColor: Y200,
+      borderColor: Y400,
+    },
+    companyC: {
+      label: COMPANIES.COMPANY_C.name,
+      value: '1100',
+      backgroundColor: R100,
+      borderColor: R200,
+    },
+    companyD: {
+      label: COMPANIES.COMPANY_D.name,
+      value: '26',
+      backgroundColor: G100,
+      borderColor: G200,
+    }
+  };
+
+  const data = {
+    labels: getValues(companyList, 'label'),
+    datasets: [
+      {
+        label: '# CCTV',
+        data: getValues(companyList, 'value'),
+        backgroundColor: getValues(companyList, 'backgroundColor'),
+        borderColor: getValues(companyList, 'borderColor'),
+        borderWidth: 1,
+      }
+    ]
+  };
+
+  const options = {
+    plugins: {
+      legend: {
+        position: 'right',
+        labels: {
+          useBorderRadius: true,
+          borderRadius: 100,
+          boxWidth: 10,
+          boxHeight: 10,
+        },
+      },
+      tooltips: {
+        backgroundColor: 'rgba(0,0,0,0.7)',
+        callbacks: {
+          label(tooltipItem) {
+            return tooltipItem.yLabel;
+          },
+        },
+      },
+    },
+    cutout: '60%',
+  };
 
   return (
     <div className={classes.chartWrapper}>
       <h4>{title}</h4>
       <h1>{amount}</h1>
       <p>{`${percentage} so với tháng trước`}</p>
+      <div>
+        <Doughnut data={data} options={options}/>
+      </div>
     </div>
   )
 }

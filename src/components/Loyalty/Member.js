@@ -4,6 +4,9 @@ import TotalCustomers from './customerComponents/TotalCustomers';
 import CustomerLineGraph from './customerComponents/CustomerLineGraph';
 import CustomerSegment from './customerComponents/CustomerSegment';
 import CustomerSystemUsageGraph from './customerComponents/CustomerSystemUsage';
+import dayjs from 'dayjs';
+import { DEFAULT_FORMAT_DATE } from '../utils/constant';
+import { getDates } from '../utils/common';
 
 const useStyles = createUseStyles({
   reportWrapper: {
@@ -25,6 +28,10 @@ const useStyles = createUseStyles({
 
 function Member() {
   const classes = useStyles();
+  const currentDate = dayjs();
+  const lastDate = currentDate.subtract(1, 'week');
+  const dates = getDates(lastDate, currentDate);
+  console.log('DATES', dates);
 
   const totalCustomers = [
     {
@@ -60,6 +67,7 @@ function Member() {
       <div className={classes.graphWrapper}>
         <CustomerLineGraph 
           title='Tỉ lệ tăng giảm khách hàng'
+          labels={dates}
         />
         <div className={classes.customerSegment}>
           <CustomerSegment />
