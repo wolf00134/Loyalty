@@ -103,18 +103,6 @@ function RightMenu() {
               {renderContentHeader('Điểm sắp hết hạn')}
             </div>
           )
-        case RIGHT_PAGE_CONTENT.UNUSUAL_TRANSACTION.name:
-          return (
-            <div>
-              {renderContentHeader('Giao dịch bất thường')}
-            </div>
-          )
-        case RIGHT_PAGE_CONTENT.ADJUST_TRANSACTION.name:
-          return (
-            <div>
-              {renderContentHeader('Giao dịch điều chỉnh')}
-            </div>
-          )
         case RIGHT_PAGE_CONTENT.NETWORK_GIFT_EXCHANGE.name:
           return (
             <div>
@@ -172,10 +160,6 @@ function RightMenu() {
         return <ExpiredPoints />
       case RIGHT_PAGE_CONTENT.NEAR_EXPIRED_POINTS.name:
         return <NearExpiredPoints />
-      case RIGHT_PAGE_CONTENT.UNUSUAL_TRANSACTION.name:
-        return <UnusualTransactions />
-      case RIGHT_PAGE_CONTENT.ADJUST_TRANSACTION.name:
-        return <AdjustTransactions />
       case RIGHT_PAGE_CONTENT.NETWORK_GIFT_EXCHANGE.name:
         return <NetworkPrizeExchange />
       case RIGHT_PAGE_CONTENT.MEMBER_RANK_DETAILS.name:

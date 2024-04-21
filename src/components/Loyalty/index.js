@@ -218,24 +218,6 @@ function Loyalty() {
               style={{margin: 5, fontSize: 13}}
               onClick={(e) => {
                 e.stopPropagation()
-                dispatch(customerActions.changeRightPageContent(RIGHT_PAGE_CONTENT.UNUSUAL_TRANSACTION))
-              }}
-              >
-                Giao dịch bất thường
-            </Button>
-            <Button appearance='subtle' 
-              style={{margin: 5, fontSize: 13}}
-              onClick={(e) => {
-                e.stopPropagation()
-                dispatch(customerActions.changeRightPageContent(RIGHT_PAGE_CONTENT.ADJUST_TRANSACTION))
-              }}
-              >
-                Giao dịch điều chỉnh
-            </Button>
-            <Button appearance='subtle' 
-              style={{margin: 5, fontSize: 13}}
-              onClick={(e) => {
-                e.stopPropagation()
                 dispatch(customerActions.changeRightPageContent(RIGHT_PAGE_CONTENT.MEMBER_RANKS))
               }}
               >

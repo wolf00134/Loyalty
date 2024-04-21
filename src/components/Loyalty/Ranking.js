@@ -7,6 +7,8 @@ import { PiMedalLight } from "react-icons/pi";
 import { FaRegStar } from "react-icons/fa";
 import CustomerRanks from './customerComponents/CustomerRanks';
 import CustomerRankGraph from './customerComponents/CustomerRankGraph';
+import RankUpRatio from './customerComponents/RankUpRatio';
+import RankFallRatio from './customerComponents/RankFallRatio';
 
 export const useStyles = createUseStyles({
   contentWrapper: {
@@ -24,7 +26,7 @@ export const useStyles = createUseStyles({
     borderRadius: 6, 
     padding: '0.5rem',
     '& > h4': {
-      margin: 0,
+      margin: '0 0 1rem 0',
     }
   }
 })
@@ -64,12 +66,6 @@ function Ranking() {
     {
       title: 'Tháp số khách hàng theo hạng thực tế'
     },
-    {
-      title: 'Tỷ lệ khách hàng tăng hạng'
-    },
-    {
-      title: 'Tỷ lệ khách hàng rớt hạng'
-    }
   ]
 
   const renderContent = (item) => (
@@ -91,7 +87,9 @@ function Ranking() {
         {customerRanks.map((item) => renderContent(item))}
       </div>
       <div className={classes.graphWrapper}>
-        {rankGraphs.map((graph) => renderGraphTitle(graph))}
+      {/* {rankGraphs.map((graph) => renderGraphTitle(graph))} */}
+        <RankUpRatio />
+        <RankFallRatio />
       </div>
     </>
   )

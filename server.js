@@ -28,8 +28,21 @@ app.get('/api/v1/customers', async (req, res) => {
 });
 
 // Testing api
-app.post('/api/v1/users', (req, res) => {
-  console.log(req.body)
+app.post('/api/v1/customers', async (req, res) => {
+  console.log(req.body);
+  try {
+    const results = await db.query('insert into customers (name, phone_number, birthdate, onboarding_date) values ($1, $2, $3, $4) returning *',
+    [req.body.name, req.body.phone_number, req.birthdate, req.onboarding_date]);
+    console.log('POST RESULTS', results);
+    res.status(200).json({
+      status: 'success',
+      data: {
+        customers: results.rows[0],
+      },
+    });
+  } catch (err) {
+    console.log(err);
+  }
 })
 
 app.listen(port, () => {

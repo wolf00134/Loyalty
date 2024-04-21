@@ -4,6 +4,7 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from "react-chartjs-2";
 import { createUseStyles } from "react-jss";
 import { COMPANIES } from "../../utils/constant";
+import { getValues } from "../../utils/common";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -23,7 +24,7 @@ const useStyles = createUseStyles({
 
 function CustomerPieChart({title, amount, percentage}) {
   const classes = useStyles();
-  const getValues = (obj, field) => Object.values(obj).map((c) => c[field]);
+  // const getValues = (obj, field) => Object.values(obj).map((c) => c[field]);
 
   const companyList = {
     companyA: {

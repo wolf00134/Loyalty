@@ -14,3 +14,5 @@ export const getDates = (startDate, endDate) => {
   }
   return dateArray;
 };
+
+export const getValues = (obj, field) => Object.values(obj).map((c) => c[field]);

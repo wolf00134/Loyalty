@@ -54,7 +54,7 @@ function AccountBalanceDetail() {
     },
     {
       key: 2,
-      name: 'FPT Teleccom',
+      name: 'Shop B',
       amount: 250,
       src: "fptTelecom.png",
     },
@@ -66,13 +66,13 @@ function AccountBalanceDetail() {
     },
     {
       key: 4,
-      name: 'FHO',
+      name: 'Shop F',
       amount: 464,
       src: "fpt.png",
     },
     {
       key: 5,
-      name: 'Long Châu',
+      name: 'Shop E',
       amount: 464,
       src: "longChau.png",
     },

@@ -59,7 +59,7 @@ function SignIn() {
         {({ formProps, submitting }) => (
           <form className={classes.formContent} {...formProps}>
             <div>
-              <h2>Chào mừng đến với DC5 Portal</h2>
+              <h2>Chào mừng đến với Loyalty Portal</h2>
               <p aria-hidden="true" style={{ margin: 0, fontSize: 12 }}>Vui lòng đăng nhập để sử dụng dịch vụ của chúng tôi</p>
               <FormSection>
                 <Field
@@ -117,7 +117,7 @@ function SignIn() {
                   }}
                 </Field>
                 <div className={classes.forgotPassword}>
-                  <a href=''>Forgot password?</a>
+                  <a href='' alt=''>Forgot password?</a>
                 </div>
               </FormSection>
 
