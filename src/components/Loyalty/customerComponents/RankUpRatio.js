@@ -1,26 +1,11 @@
 import React from 'react';
-import CustomerRankGraph from './CustomerRankGraph';
+import CustomerRankGraph from '../GraphComponents/CustomerRankGraph';
 import { getValues } from '../../utils/common';
 import { RANKS, SHOPS } from '../../utils/constant';
 import { B500, G100, Y200 } from '@atlaskit/theme/colors';
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend,
-} from 'chart.js';
+import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend
-);
+ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 function RankUpRatio() {
   const title = 'Tỷ lệ khách hàng tăng hạng';

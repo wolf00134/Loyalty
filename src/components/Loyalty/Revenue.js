@@ -1,8 +1,11 @@
 import React from "react";
 import TotalCustomers from "./customerComponents/TotalCustomers";
 import { createUseStyles } from "react-jss";
-import CustomerLineGraph from "./customerComponents/CustomerLineGraph";
 import { N10 } from "@atlaskit/theme/colors";
+import RevenueOccurance from "./customerComponents/RevenueOccurance";
+import RevenueOnPointsSaved from "./customerComponents/RevenueOnPointsSaved";
+import RevenueOnPointsSpend from "./customerComponents/RevenueOnPointsSpend";
+import MembersAndCctvSpend from "./customerComponents/MembersAndCctvSpend";
 
 export const useStyles = createUseStyles({
   gridWrapper: {
@@ -27,6 +30,7 @@ export const useStyles = createUseStyles({
 
 function Revenue() {
   const classes = useStyles();
+
   const revenues = [
     {
       title: 'Doanh thu từ reward points tích',
@@ -58,17 +62,16 @@ function Revenue() {
       <div className={classes.gridWrapper}>
         {revenues.map((revenue) => renderRevenueReport(revenue))}
       </div>
-      <CustomerLineGraph 
-        title='Tỉ lệ phát sinh doanh thu'
-      />
+      <RevenueOccurance />
       <div className={classes.graphGrid}>
         <div className={classes.graph}>
-          <h4>Doanh thu trên từng reward points tích</h4>
+          <RevenueOnPointsSaved />
         </div>
         <div className={classes.graph}>
-          <h4>Doanh thu trên từng reward points tiêu</h4>
+          <RevenueOnPointsSpend />
         </div>
       </div>
+      <MembersAndCctvSpend />
     </>
   )
 }

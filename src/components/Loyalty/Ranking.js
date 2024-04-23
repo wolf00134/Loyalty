@@ -6,7 +6,7 @@ import { PiShieldStar } from "react-icons/pi";
 import { PiMedalLight } from "react-icons/pi";
 import { FaRegStar } from "react-icons/fa";
 import CustomerRanks from './customerComponents/CustomerRanks';
-import CustomerRankGraph from './customerComponents/CustomerRankGraph';
+import CustomerRankGraph from './GraphComponents/CustomerRankGraph';
 import RankUpRatio from './customerComponents/RankUpRatio';
 import RankFallRatio from './customerComponents/RankFallRatio';
 
@@ -24,7 +24,7 @@ export const useStyles = createUseStyles({
   graphTitle: {
     backgroundColor: N10, 
     borderRadius: 6, 
-    padding: '0.5rem',
+    padding: '1rem',
     '& > h4': {
       margin: '0 0 1rem 0',
     }
@@ -77,17 +77,12 @@ function Ranking() {
     />
   );
 
-  const renderGraphTitle = (graph) => (
-    <CustomerRankGraph title={graph.title}/>
-  );
-
   return (
     <>
       <div className={classes.contentWrapper}>
         {customerRanks.map((item) => renderContent(item))}
       </div>
       <div className={classes.graphWrapper}>
-      {/* {rankGraphs.map((graph) => renderGraphTitle(graph))} */}
         <RankUpRatio />
         <RankFallRatio />
       </div>

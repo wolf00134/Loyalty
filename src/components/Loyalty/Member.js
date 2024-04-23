@@ -1,11 +1,11 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
 import TotalCustomers from './customerComponents/TotalCustomers';
-import CustomerLineGraph from './customerComponents/CustomerLineGraph';
+import CustomerLineGraph from './GraphComponents/CustomerLineGraph';
 import CustomerSegment from './customerComponents/CustomerSegment';
 import CustomerSystemUsageGraph from './customerComponents/CustomerSystemUsage';
+import { B75 } from '@atlaskit/theme/colors';
 import dayjs from 'dayjs';
-import { DEFAULT_FORMAT_DATE } from '../utils/constant';
 import { getDates } from '../utils/common';
 
 const useStyles = createUseStyles({
@@ -31,7 +31,20 @@ function Member() {
   const currentDate = dayjs();
   const lastDate = currentDate.subtract(1, 'week');
   const dates = getDates(lastDate, currentDate);
+  const title = 'Phân khúc khách hàng';
   console.log('DATES', dates);
+
+  const data = {
+    labels: dates,
+    datasets: [
+      {
+        fill: true,
+        data: [20000, 25694,10020,30293,5833,3455,9056,32454],
+        borderColor: B75,
+        backgroundColor: 'rgba(118,199,255, 0.3)',
+      }
+    ]
+  }
 
   const totalCustomers = [
     {
@@ -51,6 +64,14 @@ function Member() {
     },
   ];
 
+  const options = {
+    plugins: {
+      legend: {
+        display: false,
+      }
+    }
+  }
+
   const renderTotalCustomers = (customer) => (
     <TotalCustomers
       title={customer.title}
@@ -67,10 +88,11 @@ function Member() {
       <div className={classes.graphWrapper}>
         <CustomerLineGraph 
           title='Tỉ lệ tăng giảm khách hàng'
-          labels={dates}
+          data={data}
+          options={options}
         />
         <div className={classes.customerSegment}>
-          <CustomerSegment />
+          <CustomerSegment title={title}/>
           <CustomerSystemUsageGraph />
         </div>
       </div>

@@ -1,6 +1,7 @@
 import { N10 } from "@atlaskit/theme/colors";
 import React from "react";
 import { createUseStyles } from "react-jss";
+import OnboardTrend from "./customerComponents/OnboardTrend";
 
 const useStyles = createUseStyles({
   gridContainer: {
@@ -23,15 +24,19 @@ function Trend() {
   const graphTitle = [
     {
       title: 'Xu hướng khách hàng onboard',
+      graph: <OnboardTrend />
     },
     {
       title: 'Member theo CCTV',
+      graph: <OnboardTrend />
     },
     {
       title: 'Xu hướng tích reward points',
+      graph: <OnboardTrend />
     },
     {
       title: 'Xu hướng tiêu reward points',
+      graph: <OnboardTrend />
     },
   ];
 
@@ -40,6 +45,7 @@ function Trend() {
       <h4>
         {t.title}
       </h4>
+        {t.graph}
     </div>
   );
 

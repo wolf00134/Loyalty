@@ -13,12 +13,12 @@ const useStyles = createUseStyles({
   }
 });
 
-function CustomerSegment() {
+function CustomerSegment({title}) {
   const classes = useStyles();
 
   return (
     <div className={classes.segmentGraph}>
-      <h4>Phân khúc khách hàng</h4>
+      <h4>{title}</h4>
     </div>
   )
 }

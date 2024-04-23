@@ -2,8 +2,6 @@ import dayjs from "dayjs";
 import { DEFAULT_FORMAT_DATE } from "./constant";
 
 export const getDates = (startDate, endDate) => {
-  console.log("🚀 ~ getDates ~ endDate:", endDate)
-  console.log("🚀 ~ getDates ~ startDate:", startDate)
   let currentDate = dayjs(startDate);
   const toDate = dayjs(endDate);
 

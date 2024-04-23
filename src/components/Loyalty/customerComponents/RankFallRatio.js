@@ -1,5 +1,5 @@
 import React from 'react';
-import CustomerRankGraph from './CustomerRankGraph';
+import CustomerRankGraph from '../GraphComponents/CustomerRankGraph';
 import { RANKS } from '../../utils/constant';
 import { B500 } from '@atlaskit/theme/colors';
 import { getValues } from '../../utils/common';

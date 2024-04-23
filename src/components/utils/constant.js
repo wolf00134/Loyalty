@@ -37,4 +37,9 @@ export const SHOPS = {
   SHOP_D: { key: 'd', name: 'Shop D'},
 };
 
+export const MEMBERS = {
+  MEMBER_SAVED: {key: 'saved', name: 'Member tích'},
+  MEMBER_SPEND: {key: 'spend', name: 'Member tiêu'},
+}
+
 export const DEFAULT_FORMAT_DATE = 'YYYY-MM-DD';
