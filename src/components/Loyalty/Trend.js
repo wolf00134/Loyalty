@@ -2,12 +2,15 @@ import { N10 } from "@atlaskit/theme/colors";
 import React from "react";
 import { createUseStyles } from "react-jss";
 import OnboardTrend from "./customerComponents/OnboardTrend";
+import MemberByCttv from "./customerComponents/MemberByCttv";
+import TrendPointsSaved from "./customerComponents/TrendPointsSaved";
+import TrendPointsSpent from "./customerComponents/TrendPointsSpent";
 
 const useStyles = createUseStyles({
-  gridContainer: {
-    display: 'grid',
-    gridTemplateColumns: '1fr 1fr',
-    gridGap: '1rem',
+  graphContainer: {
+    display: 'flex',
+    gap: '1rem',
+
   },
   title: {
     backgroundColor: N10,
@@ -28,7 +31,7 @@ function Trend() {
     },
     {
       title: 'Member theo CCTV',
-      graph: <OnboardTrend />
+      graph: <MemberByCttv />
     },
     {
       title: 'Xu hướng tích reward points',
@@ -50,9 +53,26 @@ function Trend() {
   );
 
   return (
-    <div className={classes.gridContainer}>
-      {graphTitle.map((t) => renderGraphTitle(t))}
+    <>
+    <div className={classes.graphContainer}>
+      <div className={classes.title} style={{width: '70%'}}>
+        {/* {graphTitle.map((t) => renderGraphTitle(t))} */}
+        <OnboardTrend title='Xu hướng khách hàng onboard' />
+      </div>
+      <div className={classes.title} style={{width: '30%', display: 'flex', flexDirection: 'column', gap: '3rem'}}>
+        <MemberByCttv title='Member theo CTTV' />
+      </div>
     </div>
+    <div className={classes.graphContainer}>
+      <div className={classes.title} style={{width: '50%'}}>
+        {/* {graphTitle.map((t) => renderGraphTitle(t))} */}
+        <TrendPointsSaved title='Xu hướng tích reward points' />
+      </div>
+      <div className={classes.title} style={{width: '50%'}}>
+        <TrendPointsSpent title='Xu hướng tiêu reward points' />
+      </div>
+    </div>
+    </>
   )
 }
 

@@ -1,27 +1,33 @@
 import React from 'react';
 import CustomerRankGraph from '../GraphComponents/CustomerRankGraph';
-import { RANKS } from '../../utils/constant';
-import { B500 } from '@atlaskit/theme/colors';
-import { getDates, getValues } from '../../utils/common';
+import { G400, Y200 } from '@atlaskit/theme/colors';
+import { getDates } from '../../utils/common';
 import dayjs from 'dayjs';
 
-function OnboardTrend({ title }) {
+function TrendPointsSaved({ title }) {
   const currentDate = dayjs();
   const lastDate = currentDate.subtract(5, 'day');
   const dates = getDates(lastDate, currentDate);
-
-  // console.log('RESULTS', getValues(rankList, 'label'))
   
   const data = {
     labels: dates,
     datasets: [
       {
-        label: 'Dataset',
-        data: [212, 216, 230, 337, 287, 287],
-        backgroundColor: B500,
-        borderColor: B500,
+        type: 'line',
+        label: 'Dataset 2',
+        data: [100000, 100000, 125000, 110000, 115000, 123000],
+        backgroundColor: Y200,
+        borderColor: Y200,
         borderWidth: 1,
-      }
+      },
+      {
+        type: 'bar',
+        label: 'Dataset 1',
+        data: [100000, 100000, 125000, 110000, 115000, 123000],
+        backgroundColor: G400,
+        borderColor: G400,
+        borderWidth: 1,
+      },
     ]
   };
   
@@ -42,4 +48,4 @@ function OnboardTrend({ title }) {
   )
 }
 
-export default OnboardTrend;
+export default TrendPointsSaved;

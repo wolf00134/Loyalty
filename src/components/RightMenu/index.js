@@ -47,42 +47,42 @@ function RightMenu() {
         return ( 
           <div>
             {renderContentHeader('Báo cáo khách hàng')}
-            <p>Tạo bởi DCS Admin</p>
+            <p>Tạo bởi Loyalty Admin</p>
           </div>
         );
       case RIGHT_PAGE_CONTENT.RANKING.name:
         return ( 
           <div>
             {renderContentHeader('Báo cáo xếp hạng thành viên')}
-            <p>Tạo bởi DCS Admin</p>
+            <p>Tạo bởi Loyalty Admin</p>
           </div>
         );
       case RIGHT_PAGE_CONTENT.POINTS.name:
         return (
           <div>
             {renderContentHeader('Báo cáo tích, tiêu và tiêu chéo')}
-            <p>Tạo bởi DCS Admin</p>
+            <p>Tạo bởi Loyalty Admin</p>
           </div>
         )
       case RIGHT_PAGE_CONTENT.TREND.name:
         return (
           <div>
             {renderContentHeader('Báo cao xu hướng')}
-            <p>Tạo bởi DCS Admin</p>
+            <p>Tạo bởi Loyalty Admin</p>
           </div>
         )
       case RIGHT_PAGE_CONTENT.REVENUE.name:
         return (
           <div>
             {renderContentHeader('Báo cáo doanh thu')}
-            <p>Tạo bởi DCS Admin</p>
+            <p>Tạo bởi Loyalty Admin</p>
           </div>
         )
       case RIGHT_PAGE_CONTENT.SUMMARY.name:
         return (
           <div>
             {renderContentHeader('Báo cáo tổng quan Loyalty')}
-            <p>Tạo bởi DCS Admin</p>
+            <p>Tạo bởi Loyalty Admin</p>
           </div>
         )
         case RIGHT_PAGE_CONTENT.PRIZE.name:
