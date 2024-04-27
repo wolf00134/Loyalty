@@ -56,7 +56,6 @@ function Trend() {
     <>
     <div className={classes.graphContainer}>
       <div className={classes.title} style={{width: '70%'}}>
-        {/* {graphTitle.map((t) => renderGraphTitle(t))} */}
         <OnboardTrend title='Xu hướng khách hàng onboard' />
       </div>
       <div className={classes.title} style={{width: '30%', display: 'flex', flexDirection: 'column', gap: '3rem'}}>
@@ -65,7 +64,6 @@ function Trend() {
     </div>
     <div className={classes.graphContainer}>
       <div className={classes.title} style={{width: '50%'}}>
-        {/* {graphTitle.map((t) => renderGraphTitle(t))} */}
         <TrendPointsSaved title='Xu hướng tích reward points' />
       </div>
       <div className={classes.title} style={{width: '50%'}}>

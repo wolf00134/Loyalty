@@ -140,7 +140,7 @@ function Summary() {
             <h4 style={{margin: 10}}>% Điểm tiêu / tích</h4>
             <div style={{display: 'flex', alignItems: 'center'}}>
               <h2 style={{margin: 10}}>13.64%</h2>
-              <h5 style={{margin: 10}}>+13%</h5>
+              <h5 style={{margin: 10, color: 'green'}}>+13%</h5>
             </div>
           </div>
           <hr />
@@ -148,7 +148,7 @@ function Summary() {
             <h4 style={{margin: 10}}>% Số giao dịch tiêu/ chéo / Tổng tiêu của CCTV</h4>
             <div style={{display: 'flex', alignItems: 'center'}}>
               <h2 style={{margin: 10}}>5.70%</h2>
-              <h5 style={{margin: 10}}>+6%</h5>
+              <h5 style={{margin: 10, color: 'green'}}>+6%</h5>
             </div>
           </div>
           <hr />
@@ -156,7 +156,7 @@ function Summary() {
             <h4 style={{margin: 10}}>% Điểm tiêu chéo / Tổng tiêu của CCTV</h4>
             <div style={{display: 'flex', alignItems: 'center'}}>
               <h2 style={{margin: 10}}>8.20%</h2>
-              <h5 style={{margin: 10}}>+4%</h5>
+              <h5 style={{margin: 10, color: 'green'}}>+4%</h5>
             </div>
           </div>
         </div>

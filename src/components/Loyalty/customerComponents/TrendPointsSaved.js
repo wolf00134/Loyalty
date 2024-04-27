@@ -33,6 +33,8 @@ function TrendPointsSaved({ title }) {
   
   const options = {
     responsive: true,
+    barThickness: 40,
+    pointBorderWidth: 5,
     plugins: {
       legend: {
         display: false,
