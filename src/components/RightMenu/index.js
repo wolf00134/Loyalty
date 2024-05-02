@@ -12,8 +12,6 @@ import Summary from '../Loyalty/Summary';
 import PrizeExchange from '../Loyalty/PrizeExchange';
 import ExpiredPoints from '../Loyalty/ExpiredPoints';
 import NearExpiredPoints from '../Loyalty/NearExpiredPoints';
-import UnusualTransactions from '../Loyalty/UnusualTransactions';
-import AdjustTransactions from '../Loyalty/AdjustTransactions';
 import NetworkPrizeExchange from '../Loyalty/NetworkPrizeExchange';
 import MemberRankDetails from '../Loyalty/MemberRankDetails';
 import MemberRanks from '../Loyalty/MemberRanks';
@@ -60,7 +58,7 @@ function RightMenu() {
       case RIGHT_PAGE_CONTENT.POINTS.name:
         return (
           <div>
-            {renderContentHeader('Báo cáo tích, tiêu và tiêu chéo')}
+            {renderContentHeader('Báo cáo tích, tiêu')}
             <p>Tạo bởi Loyalty Admin</p>
           </div>
         )

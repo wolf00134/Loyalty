@@ -1,14 +1,10 @@
 import React from 'react';
 import CustomerRankGraph from '../GraphComponents/CustomerRankGraph';
-import { RANKS } from '../../utils/constant';
+import { DATES } from '../../utils/constant';
 import { B500 } from '@atlaskit/theme/colors';
-import { getDates, getValues } from '../../utils/common';
-import dayjs from 'dayjs';
 
 function OnboardTrend({ title }) {
-  const currentDate = dayjs();
-  const lastDate = currentDate.subtract(5, 'day');
-  const dates = getDates(lastDate, currentDate);
+  const dates = DATES;
 
   // console.log('RESULTS', getValues(rankList, 'label'))
   
@@ -17,7 +13,7 @@ function OnboardTrend({ title }) {
     datasets: [
       {
         label: 'Dataset',
-        data: [212, 216, 230, 337, 287, 287],
+        data: [68500, 97000, 132000, 262000, 550000],
         backgroundColor: B500,
         borderColor: B500,
         borderWidth: 1,

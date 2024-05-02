@@ -1,4 +1,4 @@
-import { B300, B400, G100, G200, N10, R100, R200, Y200, Y400 } from "@atlaskit/theme/colors";
+import { B300, B400, N10, R100, R200, Y200, Y400 } from "@atlaskit/theme/colors";
 import React from "react";
 import { createUseStyles } from "react-jss";
 import { COMPANIES } from "../../utils/constant";
@@ -8,6 +8,7 @@ import CustomerPieChart from "../GraphComponents/CustomerPieChart";
 const useStyles = createUseStyles({
   chartWrapper: {
     backgroundColor: N10,
+    width: '50%',
     borderRadius: 6,
     padding: '1rem',
     '& > h3, h4, h1, h5, p': {
@@ -25,28 +26,22 @@ function TotalCustomerShopA({title, amount, percentage}) {
   const companyList = {
     companyA: {
       label: COMPANIES.COMPANY_A.name,
-      value: '1600',
+      value: 1580000,
       backgroundColor: B300,
       borderColor: B400,
     },
     companyB: {
       label: COMPANIES.COMPANY_B.name,
-      value: '18100',
+      value: 990000,
       backgroundColor: Y200,
       borderColor: Y400,
     },
     companyC: {
       label: COMPANIES.COMPANY_C.name,
-      value: '1100',
+      value: 430000,
       backgroundColor: R100,
       borderColor: R200,
     },
-    companyD: {
-      label: COMPANIES.COMPANY_D.name,
-      value: '26',
-      backgroundColor: G100,
-      borderColor: G200,
-    }
   };
 
   const data = {
@@ -65,7 +60,7 @@ function TotalCustomerShopA({title, amount, percentage}) {
   const options = {
     plugins: {
       legend: {
-        position: 'right',
+        position: 'bottom',
         labels: {
           useBorderRadius: true,
           borderRadius: 100,
@@ -89,7 +84,7 @@ function TotalCustomerShopA({title, amount, percentage}) {
     <div className={classes.chartWrapper}>
       <h4>{title}</h4>
       <h1>{amount}</h1>
-      <p>{`${percentage} so với tháng trước`}</p>
+      <p style={{marginBottom: '1rem'}}>{`${percentage} so với tháng trước`}</p>
       <div>
         <CustomerPieChart data={data} options={options}/>
       </div>

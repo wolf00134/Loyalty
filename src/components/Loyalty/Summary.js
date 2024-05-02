@@ -3,73 +3,52 @@ import TotalCustomers from "./customerComponents/TotalCustomers";
 import { useStyles } from "./Revenue";
 import CustomerLineGraph from "./GraphComponents/CustomerLineGraph";
 import CustomerSegment from "./customerComponents/CustomerSegment";
-import dayjs from "dayjs";
-import { getDates } from "../utils/common";
-import { B200, G400, N10, R400 } from "@atlaskit/theme/colors";
+import { B200, G400, N10 } from "@atlaskit/theme/colors";
 import TotalCustomerShopA from "./customerComponents/TotalCustomerShopA";
-import TotalCustomerShopB from "./customerComponents/TotalCustomerShopB";
-import TotalCustomerShopC from "./customerComponents/TotalCustomerShopC";
 import TotalPointsSavedShopA from "./customerComponents/TotalPointsSavedShopA";
-import TotalPointsSavedShopB from "./customerComponents/TotalPointsSavedShopB";
-import TotalPointsSavedShopC from "./customerComponents/TotalPointsSavedShopC";
+import { DATES } from "../utils/constant";
 
 function Summary() {
   const classes = useStyles();
-  const currentDate = dayjs();
-  const lastDate = currentDate.subtract(1, 'week');
-  const dates = getDates(lastDate, currentDate);
-  console.log("🚀 ~ Summary ~ dates:", dates);
 
   const summaries = [
     {
       title: 'Tổng khách hàng',
       amount: '3M',
-      percentage: '13%',
+      percentage: '+13%',
     },
     {
-      title: 'Tổng khách hàng tích điểm',
-      amount: '3.7M',
-      percentage: '13%',
+      title: 'Tổng giao dịch tích điểm',
+      amount: '6M',
+      percentage: '+13%',
     },
     {
-      title: 'Tổng khách hàng tiêu điểm',
-      amount: '94.5K',
-      percentage: '3%',
+      title: 'Tổng giao dịch tiêu điểm',
+      amount: '3M',
+      percentage: '+3%',
     },
     {
       title: 'Tổng reward points tích',
       amount: '1.2B',
-      percentage: '3%',
+      percentage: '+3%',
     },
     {
       title: 'Tổng reward points tiêu',
-      amount: '236M',
-      percentage: '1%',
+      amount: '965M',
+      percentage: '+15%',
     },
     {
       title: 'Tổng reward points hết hạn',
       amount: '472M',
-      percentage: '3%',
+      percentage: '+3%',
     },
   ];
   const summaryPieCharts = [
     {
-      graph: <TotalCustomerShopA title='Tổng khách hàng tích tại Shop A' amount='300K' percentage='10%'/>
+      graph: <TotalCustomerShopA title='Tổng khách hàng tại 4 công ty' amount='~895K' percentage='10%'/>
     },
     {
-      graph: <TotalCustomerShopB title='Tổng khách hàng tích tại Shop B' amount='3.08M' percentage='10%'/>
-    },
-    {
-      graph: <TotalCustomerShopC title='Tổng khách hàng tích tại Shop C' amount='372K' percentage='10%'/>
-    },
-    {
-      graph: <TotalPointsSavedShopA title='Tổng reward points tích tại Shop A' amount='446M' percentage='10%'/>
-    },
-    {
-      graph: <TotalPointsSavedShopB title='Tổng reward points tích tại Shop B' amount='762M' percentage='10%'/>
-    },
-    {
-      graph: <TotalPointsSavedShopC title='Tổng reward points tích tại Shop C' amount='33.3M' percentage='10%'/>
+      graph: <TotalPointsSavedShopA title='Tổng reward points tích tại 4 công ty' amount='~143M' percentage='10%'/>
     },
   ];
 
@@ -88,28 +67,21 @@ function Summary() {
   );
 
   const data = {
-    labels: dates,
+    labels: DATES,
     datasets: [
       {
         fill: true,
         label: 'Tích điểm',
-        data: [109000, 334000, 1650000, 667000, 465000, 67455, 90056, 324594],
+        data: [818000, 1868000, 3300000, 4211866, 6000000],
         borderColor: G400,
         backgroundColor: 'rgba(145, 255, 175, 0.3)',
       },
       {
         fill: true,
         label: 'Tiêu điểm',
-        data: [90000, 397000, 309000, 354000, 312000, 274505, 70560, 39005],
+        data: [290000, 697000, 809000, 1370560, 2800000],
         borderColor: B200,
         backgroundColor: 'rgba(127, 230, 255, 0.5)',
-      },
-      {
-        fill: true,
-        label: 'Tiêu chéo',
-        data: [78945, 834752, 892374, 437863, 93452, 289735, 923582, 48934],
-        borderColor: R400,
-        backgroundColor: 'rgba(255, 80, 80, 0.5)',
       },
     ]
   };
@@ -134,7 +106,7 @@ function Summary() {
         {summaries.map((summary) => renderSummary(summary))}
       </div>
       <div style={{display: 'flex', backgroundColor: N10, borderRadius: 6}}>
-        <CustomerLineGraph title='Số giao dịch tích, tiêu điểm và tiêu chéo' data={data} options={options} width='80%'/>
+        <CustomerLineGraph title='Số giao dịch tích, tiêu điểm' data={data} options={options} width='80%'/>
         <div style={{padding: '3rem 3rem 0 3rem'}}>
           <div>
             <h4 style={{margin: 10}}>% Điểm tiêu / tích</h4>
@@ -152,21 +124,13 @@ function Summary() {
             </div>
           </div>
           <hr />
-          <div>
-            <h4 style={{margin: 10}}>% Điểm tiêu chéo / Tổng tiêu của CCTV</h4>
-            <div style={{display: 'flex', alignItems: 'center'}}>
-              <h2 style={{margin: 10}}>8.20%</h2>
-              <h5 style={{margin: 10, color: 'green'}}>+4%</h5>
-            </div>
-          </div>
         </div>
       </div>
       <div className={classes.graphGrid}>
         <CustomerSegment title={'Phân khúc khách hàng'}/>
-        {/* <CustomerLineGraph title={'Tỷ lệ phân hạng khách hàng'} /> */}
         <CustomerSegment title={'Tỷ lệ phân hạng khách hàng'}/>
       </div>
-      <div className={classes.gridWrapper}>
+      <div style={{display: 'flex', width: '100%', gap: '1rem'}}>
         {summaryPieCharts.map((pie) => renderPieChart(pie))}
       </div>
     </>

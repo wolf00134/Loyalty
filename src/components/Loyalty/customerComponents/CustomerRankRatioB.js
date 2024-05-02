@@ -1,35 +1,38 @@
 import React from 'react';
 import CustomerRankGraph from '../GraphComponents/CustomerRankGraph';
 import { RANKS } from '../../utils/constant';
-import { B500 } from '@atlaskit/theme/colors';
+import { Y200 } from '@atlaskit/theme/colors';
 import { getValues } from '../../utils/common';
 
-function RankFallRatio() {
-  const title = 'Tỷ lệ khách hàng rớt hạng';
+function CustomerRankRatioB() {
+  const title = 'Tỷ lệ xếp hạng khách hàng của công ty B';
+
+  // Diamond: 18K
+
   const rankList = {
     diamond: {
       label: RANKS.DIAMOND.name,
-      data: 5,
-      borderColor: B500,
-      backgroundColor: B500,
+      data: 12500,
+      borderColor: Y200,
+      backgroundColor: Y200,
     },
     platinum: {
       label: RANKS.PLATINUM.name,
-      data: 3,
-      borderColor: B500,
-      backgroundColor: B500,
+      data: 142000,
+      borderColor: Y200,
+      backgroundColor: Y200,
     },
     gold: {
       label: RANKS.GOLD.name,
-      data: 35,
-      borderColor: B500,
-      backgroundColor: B500,
+      data: 288000,
+      borderColor: Y200,
+      backgroundColor: Y200,
     },
     silver: {
       label: RANKS.SILVER.name,
-      data: 5,
-      borderColor: B500,
-      backgroundColor: B500,
+      data: 328000,
+      borderColor: Y200,
+      backgroundColor: Y200,
     },
   };
 
@@ -63,4 +66,4 @@ function RankFallRatio() {
   )
 }
 
-export default RankFallRatio;
+export default CustomerRankRatioB;

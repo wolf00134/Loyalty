@@ -5,8 +5,7 @@ import CustomerLineGraph from './GraphComponents/CustomerLineGraph';
 import CustomerSegment from './customerComponents/CustomerSegment';
 import CustomerSystemUsageGraph from './customerComponents/CustomerSystemUsage';
 import { B75 } from '@atlaskit/theme/colors';
-import dayjs from 'dayjs';
-import { getDates } from '../utils/common';
+import { DATES } from '../utils/constant';
 
 const useStyles = createUseStyles({
   reportWrapper: {
@@ -28,10 +27,8 @@ const useStyles = createUseStyles({
 
 function Member() {
   const classes = useStyles();
-  const currentDate = dayjs();
-  const lastDate = currentDate.subtract(1, 'week');
-  const dates = getDates(lastDate, currentDate);
   const title = 'Phân khúc khách hàng';
+  const dates = DATES;
   console.log('DATES', dates);
 
   const data = {
@@ -39,7 +36,7 @@ function Member() {
     datasets: [
       {
         fill: true,
-        data: [20000, 25694,10020,30293,5833,3455,9056,32454],
+        data: [394857, 782398,1793485,2450000,3000000],
         borderColor: B75,
         backgroundColor: 'rgba(118,199,255, 0.3)',
       }
@@ -53,13 +50,13 @@ function Member() {
       percentage: '13%',
     },
     {
-      title: 'Tổng khách hàng có giao dịch',
-      amount: '3.4M',
+      title: 'Tổng giao dịch',
+      amount: '9M',
       percentage: '13%',
     },
     {
       title: 'Tổng khách hàng mới',
-      amount: '288K',
+      amount: '550K',
       percentage: '13%',
     },
   ];

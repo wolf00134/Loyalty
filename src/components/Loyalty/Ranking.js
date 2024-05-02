@@ -6,9 +6,9 @@ import { PiShieldStar } from "react-icons/pi";
 import { PiMedalLight } from "react-icons/pi";
 import { FaRegStar } from "react-icons/fa";
 import CustomerRanks from './customerComponents/CustomerRanks';
-import CustomerRankGraph from './GraphComponents/CustomerRankGraph';
-import RankUpRatio from './customerComponents/RankUpRatio';
-import RankFallRatio from './customerComponents/RankFallRatio';
+import CustomerRankRatioA from './customerComponents/CustomerRankRatioA';
+import CustomerRankRatioB from './customerComponents/CustomerRankRatioB';
+import CustomerRankRatioC from './customerComponents/CustomerRankRatioC';
 
 export const useStyles = createUseStyles({
   contentWrapper: {
@@ -18,7 +18,7 @@ export const useStyles = createUseStyles({
   },
   graphWrapper: {
     display: 'grid',
-    gridTemplateColumns: '1fr 1fr',
+    gridTemplateColumns: '1fr 1fr 1fr',
     gridGap: '1rem',
   },
   graphTitle: {
@@ -36,25 +36,25 @@ function Ranking() {
   const customerRanks = [
     {
       rank: 'Kim cương',
-      amount: '69.4K',
+      amount: '40K',
       difference: '-115K',
       icon: <IoDiamondOutline />
     },
     {
       rank: 'Bạch kim',
-      amount: '97.5K',
+      amount: '380K',
       difference: '-376K',
       icon: <PiShieldStar />
     },
     {
       rank: 'Vàng',
-      amount: '1.2M',
+      amount: '780K',
       difference: '+28K',
       icon: <PiMedalLight />
     },
     {
       rank: 'Bạc',
-      amount: '4.1M',
+      amount: '1.2M',
       difference: '+462K',
       icon: <FaRegStar />
     }
@@ -83,8 +83,9 @@ function Ranking() {
         {customerRanks.map((item) => renderContent(item))}
       </div>
       <div className={classes.graphWrapper}>
-        <RankUpRatio />
-        <RankFallRatio />
+        <CustomerRankRatioA />
+        <CustomerRankRatioB />
+        <CustomerRankRatioC />
       </div>
     </>
   )

@@ -6,14 +6,15 @@ import TotalCustomers from './customerComponents/TotalCustomers';
 const useStyles = createUseStyles({
   contentWrapper: {
     display: 'grid',
-    gridTemplateColumns: '1fr 1fr',
+    gridTemplateColumns: '1fr 1fr 1fr',
     gridGap: '1rem',
+    width: '60%',
   },
   graph: {
     padding: '1rem',
     backgroundColor: N10,
     borderRadius: 6,
-    width: '60%',
+    width: '40%',
     '& > h4': {
       margin: 0,
     }
@@ -38,11 +39,6 @@ function Points() {
       rate: '3%',
     },
     {
-      title:'Tổng reward points tiêu chéo',
-      amount: '24.6M',
-      rate: '14%',
-    },
-    {
       title:'Tổng khách hàng',
       amount: '3.8M',
       rate: '10%',
@@ -63,7 +59,7 @@ function Points() {
         {fGold.map((gold) => renderContent(gold))}
       </div>
       <div className={classes.graph}>
-        <h4>Số giao dịch, tiêu và tiêu chéo</h4>
+        <h4>Số giao dịch và tiêu</h4>
       </div>
     </div>
   )

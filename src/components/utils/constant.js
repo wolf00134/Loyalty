@@ -42,4 +42,6 @@ export const MEMBERS = {
   MEMBER_SPEND: {key: 'spend', name: 'Member tiêu'},
 }
 
+export const DATES = ['1 Jan', '31 Jan', '29 Feb', '31 Mar', '30 Apr'];
+
 export const DEFAULT_FORMAT_DATE = 'YYYY-MM-DD';

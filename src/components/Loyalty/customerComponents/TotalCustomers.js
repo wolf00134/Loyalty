@@ -50,12 +50,6 @@ function TotalCustomers({ title, amount, percentage }) {
       amount: '580K',
       percentage: '5%',
     },
-    {
-      src: 'fpt.png',
-      name: 'Đổi quà Network',
-      amount: '580K',
-      percentage: '5%',
-    },
   ];
 
   const renderShops = (shop) => (

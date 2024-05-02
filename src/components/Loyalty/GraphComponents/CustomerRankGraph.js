@@ -10,7 +10,6 @@ function CustomerRankGraph({title, data, options}) {
   console.log('DATA', data);
   console.log('TITLE', title);
 
-
   return (
     <div className={classes.graphTitle} style={{margin: 0}}>
       <h4>{title}</h4>

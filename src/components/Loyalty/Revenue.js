@@ -5,12 +5,11 @@ import { N10 } from "@atlaskit/theme/colors";
 import RevenueOccurance from "./customerComponents/RevenueOccurance";
 import RevenueOnPointsSaved from "./customerComponents/RevenueOnPointsSaved";
 import RevenueOnPointsSpend from "./customerComponents/RevenueOnPointsSpend";
-import MembersAndCctvSpend from "./customerComponents/MembersAndCctvSpend";
 
 export const useStyles = createUseStyles({
   gridWrapper: {
     display: 'grid',
-    gridTemplateColumns: '1fr 1fr 1fr',
+    gridTemplateColumns: '1fr 1fr',
     gridGap: '1rem',
   },
   graph: {
@@ -34,17 +33,12 @@ function Revenue() {
   const revenues = [
     {
       title: 'Doanh thu từ reward points tích',
-      amount: '12.3B',
+      amount: '1.2B',
       percentage: '3%',
     },
     {
       title: 'Doanh thu từ reward points tiêu',
-      amount: '2.3B',
-      percentage: '3%',
-    },
-    {
-      title: 'Doanh thu từ reward points tiêu chéo',
-      amount: '24.6M',
+      amount: '965M',
       percentage: '3%',
     },
   ];
@@ -71,7 +65,6 @@ function Revenue() {
           <RevenueOnPointsSpend />
         </div>
       </div>
-      <MembersAndCctvSpend />
     </>
   )
 }
