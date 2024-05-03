@@ -28,7 +28,7 @@ function CustomerInfo() {
       </div>
       <div className={classes.customerStats}>
         <div>
-          <h5>Shop B</h5>
+          <h5>Company B</h5>
           <h5>CCTV</h5>
         </div>
         <div>

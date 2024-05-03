@@ -49,7 +49,7 @@ function TransactionHistory() {
       id: '3453094853',
       name: 'Ngô Thị Hường',
       phone: '2387598792',
-      source: 'Shop C',
+      source: 'Company C',
       rewardPoints: 300,
       expiredDate: '16/12/2023',
       minus: '16/12/2023',

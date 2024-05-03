@@ -62,7 +62,7 @@ function AdjustTransactions() {
       id: '3453094853',
       transactionCode: 'cErge34VBBE3dfg45dfgg4hvv',
       transactionType: '2387598792',
-      cctv: 'Shop C',
+      cctv: 'Company C',
       fGoldSaved: 300,
       fGoldSpent: 100,
       fGoldAdjusted: 25,

@@ -48,19 +48,19 @@ function AccountBalanceDetail() {
   const shops = [
     {
       key: 1,
-      name: 'Shop A',
+      name: 'Company A',
       amount: 580,
       src: 'fptShop.png',
     },
     {
       key: 2,
-      name: 'Shop B',
+      name: 'Company B',
       amount: 250,
       src: "fptTelecom.png",
     },
     {
       key: 3,
-      name: 'Shop C',
+      name: 'Company C',
       amount: 114,
       src: "sendo.png",
     },

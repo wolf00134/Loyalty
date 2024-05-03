@@ -14,21 +14,21 @@ function RevenueOccurance() {
     datasets: [
       {
         fill: true,
-        label: 'Shop A',
+        label: 'Company A',
         data: [400000, 334000, 458000, 798020, 800923, 850360, 900569, 834753],
         borderColor: G400,
         backgroundColor: 'rgba(145, 255, 175, 0.3)',
       },
       {
         fill: true,
-        label: 'Shop B',
+        label: 'Company B',
         data: [100238, 290485, 309000, 459234, 601948, 689202, 771364, 659284],
         borderColor: Y200,
         backgroundColor: 'rgba(251, 247, 88, 0.3)',
       },
       {
         fill: true,
-        label: 'Shop C',
+        label: 'Company C',
         data: [500, 197847, 204693, 396728, 495868, 583745, 672843, 489340],
         borderColor: R400,
         backgroundColor: 'rgba(255, 80, 80, 0.3)',

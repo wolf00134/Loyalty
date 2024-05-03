@@ -31,10 +31,10 @@ export const RANKS = {
 };
 
 export const SHOPS = {
-  SHOP_A: { key: 'a', name: 'Shop A'},
-  SHOP_B: { key: 'b', name: 'Shop B'},
-  SHOP_C: { key: 'c', name: 'Shop C'},
-  SHOP_D: { key: 'd', name: 'Shop D'},
+  SHOP_A: { key: 'a', name: 'Company A'},
+  SHOP_B: { key: 'b', name: 'Company B'},
+  SHOP_C: { key: 'c', name: 'Company C'},
+  SHOP_D: { key: 'd', name: 'Company D'},
 };
 
 export const MEMBERS = {
