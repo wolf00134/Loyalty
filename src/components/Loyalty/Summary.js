@@ -20,7 +20,7 @@ function Summary() {
     {
       title: 'Tổng giao dịch tích điểm',
       amount: '6M',
-      percentage: '+13%',
+      percentage: '+10%',
     },
     {
       title: 'Tổng giao dịch tiêu điểm',
@@ -45,10 +45,10 @@ function Summary() {
   ];
   const summaryPieCharts = [
     {
-      graph: <TotalCustomerShopA title='Tổng khách hàng tại 4 công ty' amount='~895K' percentage='10%'/>
+      graph: <TotalCustomerShopA title='Tổng khách hàng tại 3 công ty' amount='~895K' percentage='10%'/>
     },
     {
-      graph: <TotalPointsSavedShopA title='Tổng reward points tích tại 4 công ty' amount='~143M' percentage='10%'/>
+      graph: <TotalPointsSavedShopA title='Tổng reward points tích tại 3 công ty' amount='~143M' percentage='10%'/>
     },
   ];
 
@@ -117,7 +117,7 @@ function Summary() {
           </div>
           <hr />
           <div>
-            <h4 style={{margin: 10}}>% Số giao dịch tiêu/ chéo / Tổng tiêu của CCTV</h4>
+            <h4 style={{margin: 10}}>% Số giao dịch tiêu/ Tổng tiêu của CTTV</h4>
             <div style={{display: 'flex', alignItems: 'center'}}>
               <h2 style={{margin: 10}}>5.70%</h2>
               <h5 style={{margin: 10, color: 'green'}}>+6%</h5>

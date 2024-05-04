@@ -26,19 +26,19 @@ function TotalPointsSavedShopA({title, amount, percentage}) {
   const companyList = {
     companyA: {
       label: COMPANIES.COMPANY_A.name,
-      value: 554200365,
+      value: 600000000,
       backgroundColor: B300,
       borderColor: B400,
     },
     companyB: {
       label: COMPANIES.COMPANY_B.name,
-      value: 391129980,
+      value: 360000000,
       backgroundColor: Y200,
       borderColor: Y400,
     },
     companyC: {
       label: COMPANIES.COMPANY_C.name,
-      value: 254869655,
+      value: 240000000,
       backgroundColor: R100,
       borderColor: R200,
     },

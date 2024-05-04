@@ -1,13 +1,10 @@
 import React from "react";
 import { G400, R400, Y200 } from "@atlaskit/theme/colors";
-import dayjs from "dayjs";
 import CustomerLineGraph from "../GraphComponents/CustomerLineGraph";
-import { getDates } from "../../utils/common";
+import { DATES } from "../../utils/constant";
 
 function RevenueOccurance() {
-  const currentDate = dayjs();
-  const lastDate = currentDate.subtract(1, 'week');
-  const dates = getDates(lastDate, currentDate);
+  const dates = DATES;
 
   const data = {
     labels: dates,
@@ -15,21 +12,21 @@ function RevenueOccurance() {
       {
         fill: true,
         label: 'Company A',
-        data: [400000, 334000, 458000, 798020, 800923, 850360, 900569, 834753],
+        data: [452100000, 612800000, 732200000, 962500000, 1082500000],
         borderColor: G400,
         backgroundColor: 'rgba(145, 255, 175, 0.3)',
       },
       {
         fill: true,
         label: 'Company B',
-        data: [100238, 290485, 309000, 459234, 601948, 689202, 771364, 659284],
+        data: [109500000, 253000000, 379800000, 419500000, 649500000],
         borderColor: Y200,
         backgroundColor: 'rgba(251, 247, 88, 0.3)',
       },
       {
         fill: true,
         label: 'Company C',
-        data: [500, 197847, 204693, 396728, 495868, 583745, 672843, 489340],
+        data: [52000000, 70040000, 95000000, 234500000, 433000000],
         borderColor: R400,
         backgroundColor: 'rgba(255, 80, 80, 0.3)',
       },
@@ -52,7 +49,7 @@ function RevenueOccurance() {
 
   return (
     <CustomerLineGraph
-      title='Tỉ lệ phát sinh doanh thu'
+      title='Tăng trưởng doanh thu'
       data={data}
       options={options}
     />

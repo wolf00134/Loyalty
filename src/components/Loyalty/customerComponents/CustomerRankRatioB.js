@@ -12,25 +12,25 @@ function CustomerRankRatioB() {
   const rankList = {
     diamond: {
       label: RANKS.DIAMOND.name,
-      data: 12500,
+      data: 42000,
       borderColor: Y200,
       backgroundColor: Y200,
     },
     platinum: {
       label: RANKS.PLATINUM.name,
-      data: 142000,
+      data: 114000,
       borderColor: Y200,
       backgroundColor: Y200,
     },
     gold: {
       label: RANKS.GOLD.name,
-      data: 288000,
+      data: 294000,
       borderColor: Y200,
       backgroundColor: Y200,
     },
     silver: {
       label: RANKS.SILVER.name,
-      data: 328000,
+      data: 450000,
       borderColor: Y200,
       backgroundColor: Y200,
     },

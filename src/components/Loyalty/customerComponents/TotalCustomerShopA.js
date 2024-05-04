@@ -26,19 +26,19 @@ function TotalCustomerShopA({title, amount, percentage}) {
   const companyList = {
     companyA: {
       label: COMPANIES.COMPANY_A.name,
-      value: 1580000,
+      value: 1500000,
       backgroundColor: B300,
       borderColor: B400,
     },
     companyB: {
       label: COMPANIES.COMPANY_B.name,
-      value: 990000,
+      value: 900000,
       backgroundColor: Y200,
       borderColor: Y400,
     },
     companyC: {
       label: COMPANIES.COMPANY_C.name,
-      value: 430000,
+      value: 600000,
       backgroundColor: R100,
       borderColor: R200,
     },

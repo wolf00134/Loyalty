@@ -36,7 +36,7 @@ function Ranking() {
   const customerRanks = [
     {
       rank: 'Kim cương',
-      amount: '40K',
+      amount: '140K',
       difference: '-115K',
       icon: <IoDiamondOutline />
     },
@@ -48,25 +48,17 @@ function Ranking() {
     },
     {
       rank: 'Vàng',
-      amount: '780K',
+      amount: '980K',
       difference: '+28K',
       icon: <PiMedalLight />
     },
     {
       rank: 'Bạc',
-      amount: '1.2M',
+      amount: '1.5M',
       difference: '+462K',
       icon: <FaRegStar />
     }
   ];
-  const rankGraphs = [
-    {
-      title: 'Tháp số khách hàng theo hạng lí tưởng'
-    },
-    {
-      title: 'Tháp số khách hàng theo hạng thực tế'
-    },
-  ]
 
   const renderContent = (item) => (
     <CustomerRanks 

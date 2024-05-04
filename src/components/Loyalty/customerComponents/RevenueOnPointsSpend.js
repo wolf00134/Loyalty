@@ -1,13 +1,10 @@
 import React from "react";
-import { B200, G400, R400, Y200 } from "@atlaskit/theme/colors";
-import dayjs from "dayjs";
+import { B200, R400, Y200 } from "@atlaskit/theme/colors";
 import CustomerLineGraph from "../GraphComponents/CustomerLineGraph";
-import { getDates } from "../../utils/common";
+import { DATES } from "../../utils/constant";
 
 function RevenueOnPointsSpend() {
-  const currentDate = dayjs();
-  const lastDate = currentDate.subtract(4, 'day');
-  const dates = getDates(lastDate, currentDate);
+  const dates = DATES;
 
   const data = {
     labels: dates,
