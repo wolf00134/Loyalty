@@ -5,6 +5,7 @@ import { createUseStyles } from 'react-jss';
 const useStyles = createUseStyles({
   systemUsageGraph: {
     backgroundColor: N10,
+    width: '100%',
     borderRadius: 6,
     padding: '1rem',
     '& > h4': {

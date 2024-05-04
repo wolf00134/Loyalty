@@ -19,9 +19,8 @@ const useStyles = createUseStyles({
     gap: '1rem',
   },
   customerSegment: {
-    display: 'grid',
-    gridTemplateColumns: '1fr 1fr',
-    gridGap: '1rem',
+    display: 'flex',
+    gap: '1rem',
   },
 })
 
