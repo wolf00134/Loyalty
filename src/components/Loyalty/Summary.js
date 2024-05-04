@@ -79,7 +79,7 @@ function Summary() {
       {
         fill: true,
         label: 'Tiêu điểm',
-        data: [290000, 697000, 809000, 1370560, 2800000],
+        data: [290000, 697000, 809000, 1370560, 3000000],
         borderColor: B200,
         backgroundColor: 'rgba(127, 230, 255, 0.5)',
       },
@@ -126,7 +126,7 @@ function Summary() {
           <hr />
         </div>
       </div>
-      <div className={classes.graphGrid}>
+      <div style={{ display: 'flex', gap: '1rem' }}>
         <CustomerSegment title={'Phân khúc khách hàng'}/>
         <CustomerSegment title={'Tỷ lệ phân hạng khách hàng'}/>
       </div>

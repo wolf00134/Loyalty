@@ -6,6 +6,7 @@ const useStyles = createUseStyles({
   segmentGraph: {
     backgroundColor: N10,
     borderRadius: 6,
+    width: '100%',
     padding: '1rem',
     '& > h4': {
       margin: 0,
