@@ -68,9 +68,6 @@ function TotalCustomers({ title, amount, percentage }) {
         <h1>{amount}</h1>
         <p>{`${percentage} so với tháng trước`}</p>
       </div>
-      {/* <div className={classes.shopTransaction}>
-        {shops.map((shop) => renderShops(shop))}
-      </div> */}
     </div>
   )
 }

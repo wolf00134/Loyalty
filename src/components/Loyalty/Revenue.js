@@ -26,23 +26,23 @@ function Revenue() {
   const revenues = [
     {
       title: 'Tổng doanh thu',
-      amount: '2.165B',
+      amount: '21.65B',
       percentage: '+18%',
     },
     {
       title: 'Doanh thu từ reward points tích',
-      amount: '1.2B',
+      amount: '12B',
       percentage: '+3%',
     },
     {
       title: 'Doanh thu từ reward points tiêu',
-      amount: '965M',
+      amount: '9.65B',
       percentage: '+15%',
     },
   ];
 
   const renderRevenueReport = (revenue) => (
-    <TotalCustomers 
+    <TotalCustomers
       title={revenue.title}
       amount={revenue.amount}
       percentage={revenue.percentage}
