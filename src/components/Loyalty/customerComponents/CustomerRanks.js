@@ -22,7 +22,7 @@ const useStyles = createUseStyles({
   },
 })
 
-function CustomerRanks({ rank, amount, difference, icon}) {
+function CustomerRanks({ rank, amount, icon}) {
   const classes = useStyles();
 
   return (
@@ -32,7 +32,6 @@ function CustomerRanks({ rank, amount, difference, icon}) {
         {icon}
       </div>
       <h2>{amount}</h2>
-      <h5>{`${difference} khách hàng so với mục tiêu`}</h5>
     </div>
   )
 }

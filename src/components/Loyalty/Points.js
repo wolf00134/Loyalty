@@ -10,7 +10,7 @@ const useStyles = createUseStyles({
     display: 'grid',
     gridTemplateColumns: '1fr 1fr 1fr',
     gridGap: '1rem',
-    width: '60%',
+    width: '100%',
   },
   graph: {
     padding: '1rem',
@@ -73,9 +73,6 @@ function Points() {
       <div className={classes.container}>
         <div className={classes.contentWrapper}>
           {fGold.map((gold) => renderContent(gold))}
-        </div>
-        <div className={classes.graph}>
-          <h4>Số giao dịch và tiêu</h4>
         </div>
       </div>
       <div className={classes.graphGrid}>

@@ -7,6 +7,8 @@ import { B200, G400, N10 } from "@atlaskit/theme/colors";
 import TotalCustomerShopA from "./customerComponents/TotalCustomerShopA";
 import TotalPointsSavedShopA from "./customerComponents/TotalPointsSavedShopA";
 import { DATES } from "../utils/constant";
+import TotalPointsSpent from "./customerComponents/TotalPointsSpent";
+import TotalPointsExpired from "./customerComponents/TotalPointsExpired";
 
 function Summary() {
   const classes = useStyles();
@@ -49,6 +51,12 @@ function Summary() {
     },
     {
       graph: <TotalPointsSavedShopA title='Tổng reward points tích tại 3 công ty' amount='~143M' percentage='10%'/>
+    },
+    {
+      graph: <TotalPointsSpent title='Tổng reward points tiêu tại 3 công ty' amount='~269M' percentage='10%'/>
+    },
+    {
+      graph: <TotalPointsExpired title='Tổng reward points hết hạn ở 3 công ty' amount='~214M' percentage='10%'/>
     },
   ];
 
