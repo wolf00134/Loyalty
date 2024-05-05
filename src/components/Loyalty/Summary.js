@@ -47,16 +47,16 @@ function Summary() {
   ];
   const summaryPieCharts = [
     {
-      graph: <TotalCustomerShopA title='Tổng khách hàng tại 3 công ty' amount='~895K' percentage='10%'/>
+      graph: <TotalCustomerShopA title='Tổng khách hàng tại 3 công ty' amount='3M' percentage='10%'/>
     },
     {
-      graph: <TotalPointsSavedShopA title='Tổng reward points tích tại 3 công ty' amount='~143M' percentage='10%'/>
+      graph: <TotalPointsSavedShopA title='Tổng reward points tích tại 3 công ty' amount='6M' percentage='10%'/>
     },
     {
-      graph: <TotalPointsSpent title='Tổng reward points tiêu tại 3 công ty' amount='~269M' percentage='10%'/>
+      graph: <TotalPointsSpent title='Tổng reward points tiêu tại 3 công ty' amount='3M' percentage='10%'/>
     },
     {
-      graph: <TotalPointsExpired title='Tổng reward points hết hạn ở 3 công ty' amount='~214M' percentage='10%'/>
+      graph: <TotalPointsExpired title='Tổng reward points hết hạn ở 3 công ty' amount='472M' percentage='10%'/>
     },
   ];
 
