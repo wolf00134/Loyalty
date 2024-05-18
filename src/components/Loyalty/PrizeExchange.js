@@ -56,9 +56,9 @@ function PrizeExchange() {
     {
       id: '3453094853',
       name: 'Ngô Thị Hường',
-      giftNane: 'Phiếu đi chợ Company C trị giá 30.000Đ',
+      giftNane: 'Phiếu đi chợ Company C trị giá 300.000Đ',
       provider: 'Company C',
-      fGoldValue: 300,
+      fGoldValue: 30,
       status: <Lozenge appearance='success'><h3>Đã đổi</h3></Lozenge>,
       time: '23/2/2024',
     }
