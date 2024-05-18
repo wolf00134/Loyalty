@@ -44,7 +44,7 @@ const useStyles = createUseStyles({
 function AccountBalance() {
   const classes = useStyles();
   const [openSearchBox, setOpenSearchBox] = useState(false);
-  const customers = useSelector((state) => state.customer.customers);
+  // const customers = useSelector((state) => state.customer.customers);
 
   const headers = [
     {
@@ -91,30 +91,17 @@ function AccountBalance() {
     }
   ];
 
-  // const customers = [
-  //   {
-  //     key: 1,
-  //     id: '5876983745',
-  //     name: 'Ngô Thị Hường',
-  //     phone: '03948583745',
-  //     time: '2023-12-06',
-  //     fGoldSaved: 2102,
-  //     fGoldSpent: 6492,
-  //     walletAddress: '398457983475T',
-  //     walletBalance: '16',
-  //   },
-  //   {
-  //     key: 2,
-  //     id: '5876983746',
-  //     name: 'Nguyễn Duy Hưng',
-  //     phone: '039345457456',
-  //     time: '2023-10-24',
-  //     fGoldSaved: 4568,
-  //     fGoldSpent: 3904,
-  //     walletAddress: '6EU348593I049',
-  //     walletBalance: '25',
-  //   },
-  // ];
+  const customers = [
+    {
+      key: 1,
+      id: '3453094853',
+      name: 'Ngô Thị Hường',
+      phone: '03948583745',
+      time: '2024-02-06',
+      fGoldSaved: 785,
+      fGoldSpent: 362,
+    },
+  ];
 
   return (
     <>

@@ -205,7 +205,7 @@ function Loyalty() {
               >
                 Giao dịch đổi quà
             </Button> */}
-            <Button appearance='subtle' 
+            {/* <Button appearance='subtle' 
               style={{margin: 5, fontSize: 13}}
               onClick={(e) => {
                 e.stopPropagation()
@@ -213,7 +213,7 @@ function Loyalty() {
               }}
               >
                 Điểm sắp hết hạn
-            </Button>
+            </Button> */}
             <Button appearance='subtle' 
               style={{margin: 5, fontSize: 13}}
               onClick={(e) => {

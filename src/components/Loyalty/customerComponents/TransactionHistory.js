@@ -51,8 +51,8 @@ function TransactionHistory() {
       phone: '2387598792',
       source: 'Company C',
       rewardPoints: 300,
-      expiredDate: '16/12/2023',
-      minus: '16/12/2023',
+      expiredDate: '24/3/2024',
+      minus: '24/3/2024',
     }
   ];
 

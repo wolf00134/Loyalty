@@ -34,10 +34,10 @@ function CustomerAccountBalances({ headers, items }) {
               <Row key={item.key}>
                 <Cell>{item.id}</Cell>
                 <Cell>{item.name}</Cell>
-                <Cell>{item.phone_number}</Cell>
-                <Cell>{item.onboarding_date}</Cell>
-                <Cell>{item.ranking_point}</Cell>
-                <Cell>{item.reward_point}</Cell>
+                <Cell>{item.phone}</Cell>
+                <Cell>{item.time}</Cell>
+                <Cell>{item.fGoldSaved}</Cell>
+                <Cell>{item.fGoldSpent}</Cell>
                 <Cell>
                   <Button appearance="primary" onClick={(e) => {
                     e.stopPropagation()
