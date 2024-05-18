@@ -93,7 +93,7 @@ function MemberRanks() {
       cctv: 'Company B',
       rankPoint: 1075,
       currentRank: 'Kim cương',
-      timeChanged: '2023-12-06',
+      timeChanged: '2024-02-06',
     },
     {
       key: 2,
@@ -103,7 +103,7 @@ function MemberRanks() {
       cctv: 'Company A',
       rankPoint: 1493,
       currentRank: 'Kim cương',
-      timeChanged: '2023-12-15',
+      timeChanged: '2024-03-15',
     },
   ];
 
