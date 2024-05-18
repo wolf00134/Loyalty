@@ -87,12 +87,12 @@ function MemberRanks() {
   const customers = [
     {
       key: 1,
-      id: '5876983745',
+      id: '3453094853',
       name: 'Ngô Thị Hường',
       phone: '03948583745',
       cctv: 'Company B',
-      rankPoint: 2102,
-      currentRank: 'Bạch kim',
+      rankPoint: 1075,
+      currentRank: 'Kim cương',
       timeChanged: '2023-12-06',
     },
     {
@@ -101,7 +101,7 @@ function MemberRanks() {
       name: 'Nguyễn Duy Hưng',
       phone: '039345457456',
       cctv: 'Company A',
-      rankPoint: 6071,
+      rankPoint: 1493,
       currentRank: 'Kim cương',
       timeChanged: '2023-12-15',
     },
